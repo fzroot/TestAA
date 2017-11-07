@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ttt.TestHbm
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.417 sec <<< FAILURE!
+ttt.TestHbm.testSave()  Time elapsed: 0.414 sec  <<< FAILURE!
+org.hibernate.HibernateException: /hibernate.cfg.xml not found
+	at org.hibernate.internal.util.ConfigHelper.getResourceAsStream(ConfigHelper.java:173)
+	at org.hibernate.cfg.Configuration.getConfigurationInputStream(Configuration.java:2026)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2007)
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:1987)
+	at ttt.TestHbm.testSave(TestHbm.java:53)
+
+ttt.TestHbm.testCache()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at ttt.TestHbm.testCache(TestHbm.java:86)
+
